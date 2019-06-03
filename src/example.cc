@@ -27,7 +27,7 @@ struct ClosedState {
     return {};
   }
 
-  std::variant<Nothing> hanlde(const CloseEvent&) const {
+  std::variant<Nothing> handle(const CloseEvent&) const {
     std::cout << "ClosedState: Door already closed..." << std::endl;
     return {};
   }
